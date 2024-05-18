@@ -1,0 +1,13 @@
+.banner {
+    margin: 30px auto;
+    width: 95%;
+    height: 200px;
+    box-shadow: 0 5 5px 5px black;
+    border-radius: 5px;
+    background: url('../../assets/images/clothes/1.png');
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}

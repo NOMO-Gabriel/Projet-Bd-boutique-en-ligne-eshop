@@ -6,11 +6,20 @@ import ProductSinglePage from './pages/ProductSinglePage/ProductSinglePage';
 import CategoryProductPage from './pages/CategoryProductPage/CategoryProductPage';
 import SearchPage from './pages/SearchPage/SearchPage';
 import CartPage from './pages/CartPage/CartPage';
+<<<<<<< HEAD
+=======
+import Header from './components/Header/Header';
+>>>>>>> VUIDE
 
 function App() {
   return(
     <div className="App">
         <BrowserRouter>
+<<<<<<< HEAD
+=======
+          <Header />
+
+>>>>>>> VUIDE
           <Routes>
             {/* home page route */}
             <Route path = "/" element = {<HomePage />} />

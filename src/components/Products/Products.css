@@ -1,0 +1,10 @@
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+    height: 20vh;
+    margin: 10px auto;
+    overflow: auto;
+}
