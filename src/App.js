@@ -7,14 +7,16 @@ import CategoryProductPage from './pages/CategoryProductPage/CategoryProductPage
 import SearchPage from './pages/SearchPage/SearchPage';
 import CartPage from './pages/CartPage/CartPage';
 import Header from './components/Header/Header';
-import Login from './pages/Login/Login';
+import Footer from './components/Footer/Footer';
+import {CartProvider} from './Contexts/CartContext';
+import Test from './Test'; 
 
 function App() {
   return(
     <div className="App">
         <BrowserRouter>
           <Header />
-
+        <CartProvider>
           <Routes>
             {/* home page route */}
             <Route path = "/" element = {<HomePage />} />
@@ -26,9 +28,13 @@ function App() {
             <Route path = "/cart" element = {<CartPage />} />
             {/* searched products */}
             <Route path = "/search/:searchTerm" element = {<SearchPage />} />
-            <Route path = "/login" element = {<Login />} />
-            {/* authentification */}
+
+
+            <Route path = "/test" element = {<Test/>} />
           </Routes>
+        </CartProvider>
+
+        <Footer/>
         </BrowserRouter>
     </div>
   )
