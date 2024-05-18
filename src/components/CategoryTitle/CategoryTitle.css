@@ -1,0 +1,26 @@
+.categoryTitle {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 50px;
+    background: rgba(9, 125, 160, 0.5);
+    border-radius: 5px 10px 10px 5px;
+    padding-left: 20px;
+}
+
+.categoryTitle .vertical-bar {
+    display: inline-block;
+    width: 5px;
+    height: 80%;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+
+.categoryTitle span {
+    background: none;
+    color: white;
+    font-size: 22px;
+}
