@@ -7,6 +7,7 @@ import CategoryProductPage from './pages/CategoryProductPage/CategoryProductPage
 import SearchPage from './pages/SearchPage/SearchPage';
 import CartPage from './pages/CartPage/CartPage';
 import Header from './components/Header/Header';
+import Login from './pages/Login/Login';
 
 function App() {
   return(
@@ -25,6 +26,8 @@ function App() {
             <Route path = "/cart" element = {<CartPage />} />
             {/* searched products */}
             <Route path = "/search/:searchTerm" element = {<SearchPage />} />
+            <Route path = "/login" element = {<Login />} />
+            {/* authentification */}
           </Routes>
         </BrowserRouter>
     </div>
