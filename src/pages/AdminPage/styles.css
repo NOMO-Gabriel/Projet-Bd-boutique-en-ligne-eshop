@@ -6,10 +6,9 @@
 
 .left {
     flex: 0.2;
-    background: red;
 }
 
 .right {
     flex: 0.8;
-    background: blue;
+    background: white;
 }

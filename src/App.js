@@ -9,7 +9,9 @@ import Header from './components/Header/Header';
 import Sidebar from './components/SideBar/Sidebar';
 import { SidebarProvider } from './contexts/SidebarContext';
 import AdminPage from './pages/AdminPage';
-
+import SalesPage from './pages/AdminPage/SalesPage/SalesPage'
+import AdminSettinsPage from './pages/AdminPage/Settings/Settings'
+import MagasinierPage from './pages/AdminPage/Magasinier/Magasinier'
 function App() {
   const location = useLocation();
 
@@ -27,8 +29,15 @@ function App() {
 
             {/* home page route */}
             <Route path = "/" element = {<HomePage />} />
+
+
             {/* admin page route */}
-            <Route path = "/admin" element = {<AdminPage />} />
+            <Route path="/admin" element={<AdminPage />}>
+            <Route path="sales" element={<SalesPage />} />
+            <Route path="settings" element={<AdminSettinsPage />} />
+            <Route path="magasiniers" element={<MagasinierPage />} />
+          </Route>
+
             {/* single product route */}
             <Route path = "/product/:codePro" element = {<ProductSinglePage />} />
             {/* category wise product listing route */}
