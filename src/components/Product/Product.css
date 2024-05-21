@@ -1,8 +1,55 @@
 .product {
     height: 100%;
     width: 20%;
+    background: var(--base-rgba);
+    overflow: hidden;
+    border-radius: 5px 5px 15px 15px;
 }
 
-.product img {
+.product .img {
+    background: white;
+    margin: 5px auto;
     width: 95%;
+    height: 60%;
+}
+
+.product .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product .notes {
+    padding: 0 10px;
+    color: white;
+}
+
+.product .name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product .description {
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+    text-align: justify;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prices .price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.prices .promo {
+    font-size: 14px;
+    font-style: italic;
 }

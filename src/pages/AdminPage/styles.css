@@ -1,0 +1,15 @@
+.adminPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left {
+    flex: 0.2;
+    background: red;
+}
+
+.right {
+    flex: 0.8;
+    background: blue;
+}

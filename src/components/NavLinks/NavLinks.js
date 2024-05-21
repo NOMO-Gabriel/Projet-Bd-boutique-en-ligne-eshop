@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFetch from '../../hooks/useFetch';
+import { getCategories } from '../../services/api';
+
 import './NavLinks.css';
 
 const NavLinks = () => {
+    const { data: categories, loading, error } = useFetch(getCategories);
+
+    const categoriesToDisplay = categories.slice(0, 10);
+
     return (
         <div>
             <ul class="ul-gender">
-                <li><Link>Hommes</Link></li>
-                <li><Link>Femmes</Link></li>
-                <li><Link>Enfants</Link></li>
-                <div class="vertical-divider"></div>
-                <li><Link>Pantalons</Link></li>
-                <li><Link>Chemises</Link></li>
-                <li><Link>Jupes</Link></li>
-                <li><Link>Robes</Link></li>
-                <li><Link>Lunettes</Link></li>
+                {categoriesToDisplay.map((category, index) => (
+                    <li key={index}><Link to = {`category/${category.idCat}`}>{category.nomCat}</Link></li>
+                ))}
             </ul>
         </div>
     );

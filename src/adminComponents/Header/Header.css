@@ -1,0 +1,64 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--base-rgb);
+    margin: 20px auto;
+    width: 95%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.admin-header .navigation {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-header .icon {
+    background: none;
+}
+
+.admin-header .navigation .icon {
+    margin-right: 15px;
+}
+
+.admin-header .navigation .next-icon {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.admin-header aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.admin-header aside .notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header aside .notification-icon {
+    color: yellow;
+    box-shadow: 0 0 5px yellow;
+    font-size: 24px;
+    margin: 15px;
+}
+
+.admin-header aside .account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header aside .account img {
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

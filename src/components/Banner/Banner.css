@@ -4,7 +4,7 @@
     height: 200px;
     box-shadow: 0 5 5px 5px black;
     border-radius: 5px;
-    background: url('../../assets/images/clothes/1.png');
+    background: url('/public/images/1.png');
 }
 
 .banner img {

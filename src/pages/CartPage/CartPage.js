@@ -1,16 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import Test from '../../components/Test/Test';
-
-const CartPage = () => {
-    return (<>
-        <div>
-            <h1>Cart Page</h1>
-        </div>
-
-        <Test />
-    </>);
-=======
 import { ImBin2 } from "react-icons/im";
 import './CartPage.css';
 
@@ -47,7 +35,6 @@ const CartPage = () => {
             </div>
         </div>
     );
->>>>>>> VUIDE
 };
 
 export default CartPage;

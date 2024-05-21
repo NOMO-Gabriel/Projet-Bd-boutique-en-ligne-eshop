@@ -36,10 +36,16 @@
     transform: rotate(360deg);
   }
 }
-<<<<<<< HEAD
-=======
 
 :root{
-  --base-color: #097DA0;
+  --base-rgb: #097DA0;
+  --base-rgba: rgba(9, 125, 160, 0.5);
 }
->>>>>>> VUIDE
+
+div, span, li, ul, a, aside {
+  background: none;
+}
+
+.icon-link {
+  cursor: pointer;
+}
