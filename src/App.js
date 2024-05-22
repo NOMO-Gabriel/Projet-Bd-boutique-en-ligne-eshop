@@ -22,7 +22,7 @@ function App() {
   return(
     <SidebarProvider>
       <div className="App">
-          { (!location.pathname.startsWith('/admin'))||(!location.pathname.startsWith('/magasiner') )&&
+          { (!location.pathname.startsWith('/admin'))&&(!location.pathname.startsWith('/magasiner') )&&
             <>
               <Header />
               <Sidebar />
