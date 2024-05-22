@@ -1,0 +1,15 @@
+.magasinerPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left {
+    flex: 0.2;
+    
+}
+
+.right {
+    flex: 0.8;
+    background: white;
+}

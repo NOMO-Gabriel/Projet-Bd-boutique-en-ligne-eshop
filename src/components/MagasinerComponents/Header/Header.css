@@ -1,0 +1,64 @@
+.magasiner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--base-rgb);
+    margin: 20px auto;
+    width: 95%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.magasiner-header .navigation {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.magasiner-header .icon {
+    background: none;
+}
+
+.magasiner-header .navigation .icon {
+    margin-right: 15px;
+}
+
+.magasiner-header .navigation .next-icon {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.magasiner-header aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.magasiner-header aside .notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.magasiner-header aside .notification-icon {
+    color: yellow;
+    box-shadow: 0 0 5px yellow;
+    font-size: 24px;
+    margin: 15px;
+}
+
+.magasiner-header aside .account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.magasiner-header aside .account img {
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

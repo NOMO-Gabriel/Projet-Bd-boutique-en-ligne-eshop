@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom'; // Importer useLocation depuis react-router-dom
 import './styles.css';
-import Header from '../../adminComponents/AdminHeader/AdminHeader';
-import Sidebar from '../../adminComponents/Sidebar/Sidebar';
+import Header from '../../components/adminComponents/AdminHeader/AdminHeader';
+import Sidebar from '../../components/adminComponents/Sidebar/Sidebar';
 import SalesPage from '../AdminPage/SalesPage/SalesPage';
 import SettingsPage from '../AdminPage/Settings/Settings';
 import MagasinierPage from '../AdminPage/Magasinier/Magasinier';
+import DashBoard from '../../components/adminComponents/DashboardItemContent/DashboardItemContent';
 
 const AdminPage = () => {
     const getTitle = (pathname) => {
@@ -30,7 +31,9 @@ const AdminPage = () => {
             case '/admin/magasiniers':
                 return <MagasinierPage />;
             default:
-                return <div>Admin Dashboard</div>;
+                return  <div>
+                                <DashBoard/>
+                        </div>;
         }
     };
 
