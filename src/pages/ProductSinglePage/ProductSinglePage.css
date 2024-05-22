@@ -1,0 +1,114 @@
+.productSinglePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 75vh;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    font-size: 20px;
+}
+
+.productSinglePage .img {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.productSinglePage .img img {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.productSinglePage .notes {
+    text-align: left;
+    height: 90%;
+    padding-right: 40px;
+}
+
+.productSinglePage .name {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.productSinglePage .description {
+    background: rgba(0, 0, 0, 0.01);
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.productSinglePage .other-infos .title {
+    font-weight: bold;
+    color: var(--base-rgb);
+    margin-right: 10px;
+}
+
+.productSinglePage .prices {
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    padding: 10px 0;
+    border-top: 1px solid var(--base-rgba);
+    border-bottom: 1px solid var(--base-rgba);
+}
+
+.productSinglePage .prices .price {
+    margin-right: 20px;
+}
+
+.productSinglePage .quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+
+.productSinglePage .quantity table {
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+
+.productSinglePage .quantity table td {
+    min-width: 40px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.productSinglePage .buttons button {
+    background-color: var(--base-rgb);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 15px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+.productSinglePage .buttons button div {
+    display: flex;
+    align-items: center;
+}
+
+.productSinglePage .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.productSinglePage .buttons .add-to-cart-icon {
+    background: none;
+    color: white;
+    margin-right: 10px;
+}
